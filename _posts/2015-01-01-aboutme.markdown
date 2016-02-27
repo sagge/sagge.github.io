@@ -1,0 +1,7 @@
+---
+layout: about
+category: about
+picture: /img/sakari_avatar.png
+---
+
+M.Sc. student from Aalto University majoring in intelligent products and minoring in embedded systems. Experience from DevOps and software development and constantly looking for ways to improve knowledge and skills, both technical and non-technical. Together with IT background I also have experience from teaching and customer service and I know how to find the best features from the people I work with.

@@ -1,0 +1,394 @@
+/***/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,100);
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding:1em;
+}
+
+.color-1 {
+    color: #000;
+    background: #FAFAFA;
+}
+
+.color-2 {
+    color: #000;
+    background: #DFE0DB;
+}
+
+.color-work {
+    color: #000;
+    background: #DFE0DB;
+}
+
+.color-personal {
+    color: #000;
+    background: #DFE0DB;
+}
+
+.color-university {
+    color: #000;
+    background: #FAFAFA;
+}
+
+.color-contact {
+    color: #000;
+    background: #0fffff;
+}
+
+#navi{
+    padding: 1em 2em 1em 2em;
+    position:fixed;
+    z-index: 100;
+    width:100vw;
+    background: rgba(250, 250, 250, 0.95);
+    /* border-bottom-right-radius:5%; */
+    /* border-bottom-left-radius: 5%; */
+}
+#navi > ul{
+    float:right;
+}
+#navi > ul > li > a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 0 0.6em 0.1em;
+    font-size: 0.8em;
+}
+
+li:hover,
+a:hover{
+    text-decoration: underline;
+}
+
+.container > header {
+	margin: 0 auto;
+	text-align: center;
+        height:100vh;
+}
+
+#headerContainer {
+    height:100vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.container > header h1 {
+	font-size: 3.5em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+}
+
+.container > header span {
+	display: block;
+	font-size: 60%;
+	opacity: 0.7;
+	padding: 0 0 0.6em 0.1em;
+}
+
+/***/
+
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* General styles and layout */
+
+body {
+	background: #FAFAFA;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+
+.container {
+	overflow: hidden;
+}
+
+header > h1 {
+-webkit-animation:   PULSE 10s infinite;
+    animation:   PULSE 10s infinite;
+}
+
+section {
+	position: relative;
+	padding: 5em 10% 10em;
+	background: #2980b9;
+	color: #fff;
+	text-align: center;
+}
+
+section h2 {
+	margin: 0;
+	padding: 0;
+        margin-bottom: 0.4em;
+	font-size: 3.5em;
+	line-height: 1.3;
+	font-weight: 300;
+        text-decoration: none;
+}
+
+.project {
+    padding: 1em 1em 2em 1em;
+    line-height: 1.3;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.project h3{
+    line-height: 1.3;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.4em;
+    font-size: 2em;
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+}
+
+.project_info >p{
+    text-align: justify !important;
+    margin: 0;
+    padding: 0;
+}
+.project a{
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.4em;
+    font-size: 1em;
+}
+
+section a{
+    text-decoration: none;
+    font-size: 1.3em;
+    line-height: 1.5;
+    color: inherit;
+}
+section p {
+	font-size: 1.3em;
+	line-height: 1.5;
+}
+
+.project_details:first-child {
+	text-align: right;
+}
+
+.left,
+.project_details:nth-child(2) {
+	text-align: left;
+}
+
+.col-1 .column {
+	width: 80%;
+}
+
+.col-2 .column {
+	width: 49%;
+}
+
+.col-3 .column {
+	padding: 0 1%;
+	width: 33%;
+	text-align: center;
+}
+
+.col-3 .column p {
+	padding: 1.4em;
+}
+
+.column {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.roundpic {
+	display: block;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	font-size: 8em;
+	line-height: 2em;
+	margin: 0 auto;
+}
+
+.projectpic {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 1%;
+	color: #fff;
+	text-align: center;
+	font-size: 8em;
+	line-height: 2em;
+	margin: 0 auto;
+}
+
+section.color h2 {
+	color: #fff;
+}
+
+.color {
+	background: #3498db;
+}
+
+/*** Individual section styles and separators ***/
+
+/* Common style for pseudo-elements */
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+/* Triangles */
+.section-border-triangles::before,
+.section-border-triangles::after {
+	left: 50%;
+	width: 70px;
+	height: 70px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.section-border-triangles::before {
+	top: -35px;
+        background: #FAFAFA;
+}
+
+.section-border-triangles::after {
+	bottom: -35px;
+	z-index: 10;
+	background: #FAFAFA;
+}
+
+/* Half Circle */
+.ss-style-halfcircle::before,
+.ss-style-halfcircle::after {
+    left: 50%;
+    z-index: 10;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: inherit;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.ss-style-halfcircle::before {
+    top: -50px;
+}
+
+.ss-style-halfcircle::after {
+    bottom: -50px;
+}
+
+
+/* Zig Zag (3d up and simple down) */
+.ss-style-zigzag::before,
+.ss-style-zigzag::after {
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    height: 90px;
+    background-size: 50px 100%;
+  }
+
+.ss-style-zigzag::before {
+    top: -90px;
+    background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, transparent), color-stop(0.25, #FAFAFA));
+    background-image:
+        linear-gradient(315deg, #0fffff 25%, transparent 25%),
+        linear-gradient( 45deg, #00e1e1 25%, transparent 25%);
+    background-position: 50%;
+}
+
+.ss-style-zigzag::after {
+    top: 100%;
+    background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #3498db), color-stop(0.25, #2980b9));
+    background-image: 
+        linear-gradient(135deg, #3498db 25%, transparent 25%),
+        linear-gradient(225deg, #3498db 25%, transparent 25%);
+    background-position: 50%;
+}
+
+/* Media Queries for the layout */
+@media screen and (max-width: 68em) {
+    #navi > ul > li > a,
+    section {
+	font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 68em) {
+	.column {
+		display: block;
+		width: 100% !important;
+	}
+
+        .text,
+        .project_details:first-child ,
+        .project_details:nth-child(2){
+		text-align: justify !important;
+	}
+}
+/*
+ * animations
+ */
+
+.link-logo{
+    margin-right: 2em;
+    widht: auto;
+    height: 2em;
+    
+    -webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+}
+
+
+.link-logo:hover{
+    -webkit-transform: scale(1.1); 
+    -ms-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+@-webkit-keyframes PULSE{
+    0% { -webkit-transform: scale(1); transform: scale(1);}
+    90% { -webkit-transform: scale(1); transform: scale(1);}
+    95% { -webkit-transform: scale(1.115); transform: scale(1.115);}
+    100% { -webkit-transform: scale(1); transform: scale(1);}
+}
+
+
+@keyframes PULSE{
+    0% { -webkit-transform: scale(1); transform: scale(1);}
+    90% { -webkit-transform: scale(1); transform: scale(1);}
+    95% { -webkit-transform: scale(1.115); transform: scale(1.115);}
+    100% { -webkit-transform: scale(1); transform: scale(1);}
+}

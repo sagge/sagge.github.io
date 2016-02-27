@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sakari Pesonen</title>
+    <meta name="description" content="Sakari Pesonens personal web page" />
+    <meta name="keywords" content="developer, programming, linkedin, github, portfolio" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script>
+      $(document).ready(function() {
+      $('a[href*=#]:not([href=#])').click(function(e){
+      var href = $(this).attr("href");
+      var offsetTop = href === "#" ? 0 : $(href).offset().top;
+      $('html, body').stop().animate({
+      scrollTop: offsetTop
+      }, 500);
+      e.preventDefault();
+      });
+      });
+    </script>
+    <script type="text/javascript">
+    function gen_mail_to_link(lhs,rhs) {
+        document.write("<a href=\"mailto");
+        document.write(":" + lhs + "@");         
+        document.write(rhs + "\"><img src=\"/img/emailme.gif\" style=\"width:2.5em; height:auto\"><\/a>");
+    }
+    function gen_mail_to_link2(lhs,rhs,txt) {
+        document.write("<a href=\"mailto");
+        document.write(":" + lhs + "@");         
+        document.write(rhs + "\">"+txt+"<\/a>");
+    }
+          
+</script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="navi">
+  <ul>
+     <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#work">Work Projects</a></li>
+    <li><a href="#personal">Personal Projects</a></li>
+    <li><a href="#university">University Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+<header class="color-2" id="home">
+  <div id="headerContainer">
+    <h1>Sakari Pesonen<span>Portfolio</span></h1>
+    <div/>
+</header>
+<section class="color-1" id="about">
+  <h2>About Me</h2>
+  
+    <div class="project col-2">
+      <div class="column">
+        <img src="/img/sakari_avatar.png" class="roundpic"/>
+      </div>
+      <div class="column text left">
+        <p><p>M.Sc. student from Aalto University majoring in intelligent products and minoring in embedded systems. Experience from DevOps and software development and constantly looking for ways to improve knowledge and skills, both technical and non-technical. Together with IT background I also have experience from teaching and customer service and I know how to find the best features from the people I work with.</p>
+</p>
+        <br/>
+        <p>
+          Questions? Send me a message on 
+          <strong><a target="_blank" href="https://fi.linkedin.com/in/sakaripesonen">LinkedIn</a></strong>
+          or send me an
+          <strong><script type="text/javascript">
+            gen_mail_to_link2('pesonen.sakari','gmail.com', 'Email');
+          </script></strong>.
+
+          Public projects in this portfolio (and other random stuff) can be found on my
+          <strong><a target="_blank" href="https://github.com/sagge">Github</a></strong>.
+
+          
+        </p>
+      </div>
+    </div>
+  
+</section>
+
+
+
+   
+<section class="ss-style-halfcircle color-work" id="work">
+  <h2>Work Projects</h2>
+  
+  
+  
+</section>
+
+
+
+   
+<section class="section-border-triangles color-university" id="university">
+  <h2>University Projects</h2>
+  
+  
+  
+</section>
+
+
+
+   
+<section class="section-border-triangles::before color-personal" id="personal">
+  <h2>Personal Projects</h2>
+  
+  
+  
+</section>
+
+
+<section class="ss-style-zigzag color-contact" id="contact">
+  <h2>Contact Me!</h2>
+  <div class="col-3">
+    <div class="column">
+      <script type="text/javascript"> 
+        gen_mail_to_link('pesonen.sakari','gmail.com');
+      </script>
+    </div>
+    <div class="column">
+          <a target="_blank" href="https://fi.linkedin.com/in/sakaripesonen"><img src="/img/linkedin.png"></a>
+    </div>
+    <div class="column">
+      <a target="_blank" href="https://github.com/sagge"><img src="/img/github.png"></a>
+    </div>
+    </div>
+</section>
+    </div><!-- /container -->
+  </body>
+</html>

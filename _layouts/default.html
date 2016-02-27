@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sakari Pesonen</title>
+    <meta name="description" content="Sakari Pesonens personal web page" />
+    <meta name="keywords" content="developer, programming, linkedin, github, portfolio" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script>
+      $(document).ready(function() {
+      $('a[href*=#]:not([href=#])').click(function(e){
+      var href = $(this).attr("href");
+      var offsetTop = href === "#" ? 0 : $(href).offset().top;
+      $('html, body').stop().animate({
+      scrollTop: offsetTop
+      }, 500);
+      e.preventDefault();
+      });
+      });
+    </script>
+    <script type="text/javascript">
+    function gen_mail_to_link(lhs,rhs) {
+        document.write("<a href=\"mailto");
+        document.write(":" + lhs + "@");         
+        document.write(rhs + "\"><img src=\"/img/emailme.gif\" style=\"width:2.5em; height:auto\"><\/a>");
+    }
+    function gen_mail_to_link2(lhs,rhs,txt) {
+        document.write("<a href=\"mailto");
+        document.write(":" + lhs + "@");         
+        document.write(rhs + "\">"+txt+"<\/a>");
+    }
+          
+</script>
+  </head>
+  <body>
+    <div class="container">
+      {{content}}
+    </div><!-- /container -->
+  </body>
+</html>

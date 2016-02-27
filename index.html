@@ -1,1 +1,201 @@
-Hello world
+---
+layout: default
+---
+<div id="navi">
+  <ul>
+     <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#work">Work Projects</a></li>
+    <li><a href="#personal">Personal Projects</a></li>
+    <li><a href="#university">University Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+<header class="color-2" id="home">
+  <div id="headerContainer">
+    <h1>Sakari Pesonen<span>Portfolio</span></h1>
+    <div/>
+</header>
+<section class="color-1" id="about">
+  <h2>About Me</h2>
+  {% for post in site.categories.about %}
+    <div class="project col-2">
+      <div class="column">
+        <img src="{{post.picture}}" class="roundpic"/>
+      </div>
+      <div class="column text left">
+        <p>{{post.content}}</p>
+        <br/>
+        <p>
+          Questions? Send me a message on 
+          <strong><a target="_blank" href="https://fi.linkedin.com/in/sakaripesonen">LinkedIn</a></strong>
+          or send me an
+          <strong><script type="text/javascript">
+            gen_mail_to_link2('pesonen.sakari','gmail.com', 'Email');
+          </script></strong>.
+
+          Public projects in this portfolio (and other random stuff) can be found on my
+          <strong><a target="_blank" href="https://github.com/sagge">Github</a></strong>.
+
+          
+        </p>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+
+{% assign myArray = "work" | split: "|" %}
+   {% for projectType in myArray %}
+<section class="ss-style-halfcircle color-{{projectType}}" id="{{projectType}}">
+  <h2>{{projectType | capitalize}} Projects</h2>
+  {% for post in site.posts %}
+  {% if post.category == projectType %}
+  {% if post.layout == "col-2" %}
+  <div class="project col-2">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="project_details">
+      <div class="column">
+        <img src="{{post.picture}}" class="projectpic icon"/>
+      </div>
+      <div class="column">
+        <p>{{post.content}}</p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if post.layout == "col-1" %}
+  <div class="project col-1">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="column text">
+      <p>{{post.content}}</p>
+    </div>
+  </div>
+  {% endif %}
+    {% endif %}
+  {% endfor %}
+</section>
+{% endfor %}
+
+{% assign myArray = "university" | split: "|" %}
+   {% for projectType in myArray %}
+<section class="section-border-triangles color-{{projectType}}" id="{{projectType}}">
+  <h2>{{projectType | capitalize}} Projects</h2>
+  {% for post in site.posts %}
+  {% if post.category == projectType %}
+  {% if post.layout == "col-2" %}
+  <div class="project col-2">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="project_details">
+      <div class="column">
+        <img src="{{post.picture}}" class="projectpic icon"/>
+      </div>
+      <div class="column">
+        <p>{{post.content}}</p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if post.layout == "col-1" %}
+  <div class="project col-1">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="column text">
+      <p>{{post.content}}</p>
+    </div>
+  </div>
+  {% endif %}
+    {% endif %}
+  {% endfor %}
+</section>
+{% endfor %}
+
+{% assign myArray = "personal" | split: "|" %}
+   {% for projectType in myArray %}
+<section class="section-border-triangles::before color-{{projectType}}" id="{{projectType}}">
+  <h2>{{projectType | capitalize}} Projects</h2>
+  {% for post in site.posts %}
+  {% if post.category == projectType %}
+  {% if post.layout == "col-2" %}
+  <div class="project col-2">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="project_details">
+      <div class="column">
+        <img src="{{post.picture}}" class="projectpic icon"/>
+      </div>
+      <div class="column">
+        <p>{{post.content}}</p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if post.layout == "col-1" %}
+  <div class="project col-1">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="column text">
+      <p>{{post.content}}</p>
+    </div>
+  </div>
+  {% endif %}
+    {% endif %}
+  {% endfor %}
+</section>
+{% endfor %}
+
+<section class="ss-style-zigzag color-contact" id="contact">
+  <h2>Contact Me!</h2>
+  <div class="col-3">
+    <div class="column">
+      <script type="text/javascript"> 
+        gen_mail_to_link('pesonen.sakari','gmail.com');
+      </script>
+    </div>
+    <div class="column">
+          <a target="_blank" href="https://fi.linkedin.com/in/sakaripesonen"><img src="/img/linkedin.png"></a>
+    </div>
+    <div class="column">
+      <a target="_blank" href="https://github.com/sagge"><img src="/img/github.png"></a>
+    </div>
+    </div>
+</section>
