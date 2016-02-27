@@ -3,7 +3,7 @@ name: Android App
 when: 09/2014­-12/2014
 technologies: Google Location Api, Raspberry Pi server
 
-layout: col-2
+layout: col-1
 category: personal
 
 ---
