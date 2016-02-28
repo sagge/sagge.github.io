@@ -8,10 +8,20 @@
     <meta name="description" content="Sakari Pesonens personal web page" />
     <meta name="keywords" content="developer, programming, linkedin, github, portfolio" />
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script>
       $(document).ready(function() {
       $('a[href*=#]:not([href=#])').click(function(e){
@@ -40,7 +50,7 @@
   </head>
   <body>
     <div class="container">
-      <div id="navi">
+      <!-- <div id="navi">
   <ul>
      <li><a href="#home">Home</a></li>
     <li><a href="#about">About Me</a></li>
@@ -49,14 +59,40 @@
     <li><a href="#university">University Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-</div>
-<header class="color-2" id="home">
+</div> -->
+
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+    	<li><a href="#about">Me</a></li>
+    	<li><a href="#work">Work Projects</a></li>
+    	<li><a href="#personal">Personal Projects</a></li>
+    	<li><a href="#university">University Projects</a></li>
+    	<li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- <header class="color-2" id="home">
   <div id="headerContainer">
     <h1>Sakari Pesonen<span>Portfolio</span></h1>
     <div/>
-</header>
-<section class="color-1" id="about">
-  <h2>About Me</h2>
+</header> -->
+<section class="color-2" id="about">
+  <h2>Sakari Pesonen<span>Portfolio</span></h2>
   
     <div class="project col-2">
       <div class="column">
@@ -531,5 +567,7 @@
     </div>
 </section>
     </div><!-- /container -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/navbar.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div id="navi">
+<!-- <div id="navi">
   <ul>
      <li><a href="#home">Home</a></li>
     <li><a href="#about">About Me</a></li>
@@ -10,14 +10,40 @@ layout: default
     <li><a href="#university">University Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-</div>
-<header class="color-2" id="home">
+</div> -->
+
+<nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+    	<li><a href="#about">Me</a></li>
+    	<li><a href="#work">Work Projects</a></li>
+    	<li><a href="#personal">Personal Projects</a></li>
+    	<li><a href="#university">University Projects</a></li>
+    	<li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- <header class="color-2" id="home">
   <div id="headerContainer">
     <h1>Sakari Pesonen<span>Portfolio</span></h1>
     <div/>
-</header>
-<section class="color-1" id="about">
-  <h2>About Me</h2>
+</header> -->
+<section class="color-2" id="about">
+  <h2>Sakari Pesonen<span>Portfolio</span></h2>
   {% for post in site.categories.about %}
     <div class="project col-2">
       <div class="column">
