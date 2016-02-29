@@ -12,6 +12,10 @@ li {
     padding:1em;
 }*/
 
+.nav.navbar-nav.navbar-right li a {
+    color: #000;
+}
+
 .color-1 {
     color: #000;
     background: #FAFAFA;
@@ -24,17 +28,17 @@ li {
 
 .color-work {
     color: #000;
-    background: #FBAB6E;
+    background: #CCFFF5;
 }
 
 .color-personal {
     color: #000;
-    background: #0FC8FF;
+    background: #CCFFF5;
 }
 
 .color-university {
     color: #000;
-    background: #B93B5C;
+    background: #CCFFCC;
 }
 
 .color-contact {
@@ -120,6 +124,7 @@ a:hover{
 body {
 	background: #FAFAFA;
 	color: #fff;
+    line-height: 0;
 	font-family: 'Ubuntu', sans-serif;
 }
 
@@ -244,7 +249,7 @@ section p {
 	font-size: 8em;
 	line-height: 2em;
 	margin: 0 auto;
-    background: #CCCCCC
+    background: #CCCCCC;
 }
 
 .projectpic {
@@ -289,13 +294,43 @@ section::after {
 
 .section-border-triangles::before {
 	top: -35px;
-        background: #FAFAFA;
+        background: #CCFFF5;
 }
 
 .section-border-triangles::after {
 	bottom: -35px;
 	z-index: 10;
-	background: #0FC8FF;
+	background: #CCFFF5;
+}
+
+/* Big triangle with shadow */
+
+#trianglePath1 {
+    fill: #CCFFCC;
+    stroke: #CCFFCC;
+} 
+
+#trianglePath2 {
+    fill: #b3ffb3;
+    stroke: #b3ffb3;
+}
+
+/* Alternative slit with inner shadow */
+#slitPath1 {
+    fill: #CCFFF5;
+    stroke: red;
+    stroke-width: 0;
+}
+
+#slitPath2, #slitPath3 {
+    fill: #b3ffb3;
+}
+
+/* Curves */
+#curveUpColor path,
+#curveDownColor path {
+    fill: #666666;
+    stroke: #34
 }
 
 /* Half Circle */

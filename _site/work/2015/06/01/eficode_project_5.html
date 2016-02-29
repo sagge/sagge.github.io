@@ -38,7 +38,8 @@
     function gen_mail_to_link(lhs,rhs) {
         document.write("<a href=\"mailto");
         document.write(":" + lhs + "@");         
-        document.write(rhs + "\"><img src=\"/img/emailme.gif\" style=\"width:5em; height:auto\"><\/a>");
+        // document.write(rhs + "\"><img src=\"/img/emailme.gif\" style=\"width:5em; height:auto\"><\/a>");
+        document.write(rhs + "\">"+lhs+"@"+rhs+"<\/a>");
     }
     function gen_mail_to_link2(lhs,rhs,txt) {
         document.write("<a href=\"mailto");
