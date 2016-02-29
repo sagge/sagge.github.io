@@ -24,17 +24,17 @@ li {
 
 .color-work {
     color: #000;
-    background: #DFE0DB;
+    background: #FBAB6E;
 }
 
 .color-personal {
     color: #000;
-    background: #DFE0DB;
+    background: #0FC8FF;
 }
 
 .color-university {
     color: #000;
-    background: #FAFAFA;
+    background: #B93B5C;
 }
 
 .color-contact {
@@ -295,7 +295,7 @@ section::after {
 .section-border-triangles::after {
 	bottom: -35px;
 	z-index: 10;
-	background: #FAFAFA;
+	background: #0FC8FF;
 }
 
 /* Half Circle */
