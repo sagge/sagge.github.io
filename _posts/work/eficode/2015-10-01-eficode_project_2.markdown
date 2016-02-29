@@ -2,6 +2,7 @@
 name: Eficode - Code School
 when: 10/10/2015­
 role: Teacher
+technologies: Turtle Roy, Codeacademy
 
 layout: col-1
 category: work

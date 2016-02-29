@@ -28,12 +28,12 @@ li {
 
 .color-work {
     color: #000;
-    background: #CCFFF5;
+    background: #CCFFFF;
 }
 
 .color-personal {
     color: #000;
-    background: #CCFFF5;
+    background: #CCFFFF;
 }
 
 .color-university {
@@ -294,13 +294,13 @@ section::after {
 
 .section-border-triangles::before {
 	top: -35px;
-        background: #CCFFF5;
+        background: #CCFFFF;
 }
 
 .section-border-triangles::after {
 	bottom: -35px;
 	z-index: 10;
-	background: #CCFFF5;
+	background: #CCFFFF;
 }
 
 /* Big triangle with shadow */
@@ -317,7 +317,7 @@ section::after {
 
 /* Alternative slit with inner shadow */
 #slitPath1 {
-    fill: #CCFFF5;
+    fill: #CCFFFF;
     stroke: red;
     stroke-width: 0;
 }

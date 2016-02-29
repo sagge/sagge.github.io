@@ -9,4 +9,4 @@ category: personal
 picture: /img/subaru_engine_1.jpg
 ---
 
-JDM Twin-Turbo Legacy imported to Finland with faulty engine. Complete engine rebuild and modifications to get it leagally runging in Finland. 280 bhp and lots of fun and horror.
+JDM Twin-Turbo Legacy imported to Finland with faulty engine. Complete self-made engine rebuild and modifications to get it legally running in Finland. 280 bhp and lots of fun and horror.

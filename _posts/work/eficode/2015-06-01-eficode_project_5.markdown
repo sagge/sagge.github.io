@@ -8,4 +8,4 @@ layout: col-1
 category: work
 ---
 
-Audit concentrating on client’s software development model and product delivery cycles. Proof of concept developed for automated acceptance testing.
+Audit concentrating on client's software development model and product delivery cycles. Proof of concept developed for automated acceptance testing.

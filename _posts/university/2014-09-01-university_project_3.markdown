@@ -8,4 +8,4 @@ category: university
 picture: /img/copter.png
 ---
 
-Autonomous flying robot built from scratch. ROS running on Raspberry PI and localisation and navigation done by using LiDAR on top of the drone
+Autonomous flying robot built from scratch. Robot Operating System running on Raspberry PI and localization and navigation done by using LiDAR on top of the drone. Fail safe obstacle avoidance done by using IR sensors.
