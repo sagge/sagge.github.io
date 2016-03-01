@@ -1,5 +1,5 @@
 ---
-name: Own Websites
+name: Own Website - Send a message to my metro display!
 when: 12/2014
 technologies: Bootstrap, HTML, CSS, PHP, Raspberry PI, Python
 
