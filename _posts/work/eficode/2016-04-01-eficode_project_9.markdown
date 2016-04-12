@@ -2,6 +2,7 @@
 name: Speaker at DEVOPS 2016
 when: 12/4/2016
 role: Speaker
+technologies: Robot Framework, Robotics, Computer Vision, Python, Embedded Systems
 
 layout: col-1
 category: work
