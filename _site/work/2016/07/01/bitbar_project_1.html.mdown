@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Sakari Pesonen - Portfolio" />
+    <meta property="og:description" content="Portfolio" />
+    <meta property="og:url" content="https://sagge.github.io" />
+    <meta property="og:image" content="https://sagge.github.io/img/website.png" />
+    <link rel="canonical" href="https://sagge.github.io" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sakari Pesonen</title>
+    <meta name="description" content="Sakari Pesonens personal web page" />
+    <meta name="keywords" content="developer, programming, linkedin, github, portfolio" />
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script>
+      $(document).ready(function() {
+      $('a[href*=#]:not([href=#])').click(function(e){
+      var href = $(this).attr("href");
+      var offsetTop = href === "#" ? 0 : $(href).offset().top;
+      $('html, body').stop().animate({
+      scrollTop: offsetTop
+      }, 500);
+      e.preventDefault();
+      });
+      });
+    </script>
+    <script type="text/javascript">
+    function gen_mail_to_link(lhs,rhs) {
+        document.write("<a href=\"mailto");
+        document.write(":" + lhs + "@");         
+        // document.write(rhs + "\"><img src=\"/img/emailme.gif\" style=\"width:5em; height:auto\"><\/a>");
+        document.write(rhs + "\">"+lhs+"@"+rhs+"<\/a>");
+    }
+    function gen_mail_to_link2(lhs,rhs,txt) {
+        document.write("<a href=\"mailto");
+        document.write(":" + lhs + "@");         
+        document.write(rhs + "\">"+txt+"<\/a>");
+    }
+          
+</script>
+  </head>
+  <body>
+    <div class="container">
+      
+    </div><!-- /container -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
