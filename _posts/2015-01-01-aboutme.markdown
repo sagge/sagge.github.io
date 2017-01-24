@@ -4,4 +4,4 @@ category: about
 picture: /img/sakari_avatar_3_small.png
 ---
 
-M.Sc. and can-do person from Aalto University with a major in intelligent products and minors in embedded systems and bionics. Experience from DevOps and software development and constantly looking for ways to learn more through interesting projects - with other people or independently. Together with IT background I also have experience from teaching and customer service and I know how to find the best features from the people I work with.
+M.Sc. and can-do person from Aalto University with a major in intelligent products and minors in embedded systems and bionics. International experience from DevOps and software development and constantly looking for ways to learn more through different kinds of projects. Together with IT background I also have experience from teaching and customer service and I know how to find the best features from the people I work with. On my free time I like to learn new things by building various hardware and software projects - from model airplanes to CNC milling machines.
