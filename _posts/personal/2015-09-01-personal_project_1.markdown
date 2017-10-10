@@ -1,6 +1,6 @@
 ---
 name: Location-based mobile App
-when: 11/2015-02/2016 & 01/2017-
+when: 11/2015-03/2017
 technologies: React Native, Redux, Docker, Docker Compose, NodeJS, Microservices, HAProxy, Ionic, Ansible, Vagrant, Google Location Api, Amazon Web Services
 
 layout: col-1
