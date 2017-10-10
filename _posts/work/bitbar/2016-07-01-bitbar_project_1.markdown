@@ -1,6 +1,6 @@
 ---
 name: Australian Weather Company - Test Automation Framework for Mobile App
-when: 01/07/2016
+when: 07/2016
 role: Developer
 technologies: Appium, Java, jUnit, Testdroid Cloud
 
