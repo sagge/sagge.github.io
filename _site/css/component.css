@@ -12,6 +12,10 @@ li {
     padding:1em;
 }*/
 
+.full-width {
+    padding: 0;
+}
+
 .nav.navbar-nav.navbar-right li a {
     color: #000;
 }
@@ -197,14 +201,30 @@ section h2 {
 }
 
 section a{
-    text-decoration: none;
-    font-size: 1.3em;
-    line-height: 1.5;
     color: inherit;
 }
 section p {
 	font-size: 1.3em;
 	line-height: 1.5;
+}
+
+.link {
+    font-style: italic !important;
+    font-size: 1.1em !important;
+    font: inherit;
+    text-align: left;
+    color: inherit;
+    background-image: linear-gradient(120deg, #5cfd98 0%, #50c5fd 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    cursor: pointer;
+}
+
+.link:hover {
+    background-size: 100% 88%;
+    color: inherit;
 }
 
 .project_details:first-child {
@@ -221,7 +241,7 @@ section p {
 }
 
 .col-2 .column {
-	width: 49%;
+	width: 50%;
 }
 
 .col-3 .column {
@@ -237,6 +257,56 @@ section p {
 .column {
 	display: inline-block;
 	vertical-align: top;
+}
+
+.table {
+    display: table;
+    margin: 0;
+}
+
+.cell2 {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.avatar {
+    width: 100%
+}
+
+.mobileshow {
+    display: none;
+}
+
+@media screen and (max-width: 68em) {
+    .mobileshow {
+        display: block;
+    }
+}
+
+.mobilehidden {
+    display: block;
+}
+
+@media screen and (max-width: 68em) {
+    .mobilehidden {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 68em) {
+    .avatar {
+        display: block;
+        padding: 0 40px 0 40px;
+        max-width: 5em;
+        max-height: 5em;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        font-size: 8em;
+        line-height: 2em;
+        margin: 0 auto;
+    }
 }
 
 .roundpic {

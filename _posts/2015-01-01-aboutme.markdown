@@ -1,7 +1,7 @@
 ---
 layout: about
 category: about
-picture: /img/sakari_avatar_3_small.png
+picture: /img/big_avatar.jpg
 ---
 
-M.Sc. and can-do person from Aalto University with a major in intelligent products and minors in embedded systems and bionics. International experience from DevOps and software development and constantly looking for ways to learn more through different kinds of projects. Together with IT background I also have experience from teaching and customer service and I know how to find the best features from the people I work with. On my free time I like to learn new things by building various hardware and software projects - from model airplanes to CNC milling machines.
+Entrepreneur, private pilot, M.Sc. and a diehard can-do person with international experience from devops and startups. Constantly exploring and experimenting and always learning new stuff. I like building things, from surfboards to CNC milling machines and if something breaks, I'll always find a way to fix it. On my spare time I like to perfect my skills on making Neapolitan pizzas.
