@@ -9,4 +9,4 @@ category: personal
 picture: /img/subaru_engine_1.jpg
 ---
 
-JDM Twin-Turbo Legacy imported to Finland with faulty engine. Complete self-made engine rebuild and modifications to get it legally running in Finland.
+JDM Twin-Turbo Legacy imported to Finland with a faulty engine. Complete self-made engine rebuild and modifications to get it legally running in Finland.
