@@ -1,7 +1,7 @@
 ---
 name: Micro Machines C++ game
 when: 09/2012–12/2012
-technologies: C++,Open GL, Make
+technologies: C++, Open GL, Make
 
 layout: col-2
 category: university
