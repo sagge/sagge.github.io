@@ -1,7 +1,7 @@
 ---
 name: Company providing CAD software - Audit + Proof Of Consept
 when: 06/2015­-08/2015
-role: DevOps Consultant
+role: Devops Consultant
 technologies: Robot Framework, Sikuli, Jenkins.
 
 layout: col-1

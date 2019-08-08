@@ -1,7 +1,7 @@
 ---
 name: National railway company - Robot Framework POC
 when: 02/2016­-03/2016
-role: DevOps Consultant
+role: Devops Consultant
 technologies: Robot Framework, Selenium2Library, ImageHorizonLibrary
 
 layout: col-1

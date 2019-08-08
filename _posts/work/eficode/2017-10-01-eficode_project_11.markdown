@@ -1,7 +1,7 @@
 ---
 name: Telecom Operator - Jenkins CD pipeline & shared library for Openshift
 when: 09/2017-11/2017
-role: DevOps Engineer
+role: Devops Engineer
 technologies: Openshift, Docker, Jenkins Pipeline
 
 layout: col-1

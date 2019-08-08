@@ -1,7 +1,7 @@
 ---
 name: Payment terminal company - Test Automation for Payment Terminals
 when: 02/2015–06/2015
-role: DevOps Consultant
+role: Devops Consultant
 technologies: Robot Framework, Python, Raspberry Pi, Tesseract OCR, ShapeOko 2, Arduino, Deveo, 3D­-printing.
 
 layout: col-1

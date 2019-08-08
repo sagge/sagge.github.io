@@ -8,4 +8,4 @@ layout: col-1
 category: work
 ---
 
-Development related to web application of mobile payment company.
+Development related to the web application of the mobile payment company.

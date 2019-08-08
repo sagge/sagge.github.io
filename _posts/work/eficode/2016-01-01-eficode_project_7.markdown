@@ -1,7 +1,7 @@
 ---
 name: Automation company - Robot Framework POC
 when: 01/2016­-02/2016
-role: DevOps Consultant
+role: Devops Consultant
 technologies: Robot Framework, Selenium2Library, Metso DNA
 
 layout: col-1

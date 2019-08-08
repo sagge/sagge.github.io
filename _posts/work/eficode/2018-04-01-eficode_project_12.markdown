@@ -1,7 +1,7 @@
 ---
 name: Telecom Operator / Pension Insurance Company - OpenShift platform consulting and onsite support
-when: 11/2017-
-role: DevOps Lead
+when: 11/2017-03/2019
+role: Devops Lead
 technologies: OpenShift, Jenkins, Artifactory, CI/CD
 
 layout: col-1

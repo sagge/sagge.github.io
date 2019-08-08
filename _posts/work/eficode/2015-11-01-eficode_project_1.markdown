@@ -1,7 +1,7 @@
 ---
 name: Major Healthcare organisation - Test Data Visualization
 when: 11/2015­-01/2016
-role: DevOps Consultant
+role: Devops Consultant
 technologies: Grafana, InfluxDB, Rational DOORS, Robot Framework
 
 layout: col-1
