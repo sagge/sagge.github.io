@@ -8,4 +8,4 @@ layout: col-1
 category: work
 ---
 
-Coding course for high school studens where the students get to create a real world project using modern technologies. Raspberry Pi for collecting and sending data to backend and frontend for visulizing the data. Unlike traditional coding courses, this course focuses more on actual doing and creating rather that studying the nuances of some particular coding language.
+Coding course for high school students where the students get to create a real world project using modern technologies. Raspberry Pi for collecting and sending data to backend and frontend for visualizing the data. Unlike traditional coding courses, this course focuses more on actual doing and creating rather than studying the nuances of some particular coding language.
