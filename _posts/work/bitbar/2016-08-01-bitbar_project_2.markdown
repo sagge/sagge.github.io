@@ -1,7 +1,7 @@
 ---
 name: Bitbar Inc - Robot Framework example for Testdroid Cloud
 when: 08/2016
-role: Developer
+role: Software Engineer
 technologies: Robot Framework, Appium, Python, Testdroid Cloud
 
 layout: col-1

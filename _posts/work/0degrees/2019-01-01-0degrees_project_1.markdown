@@ -1,7 +1,7 @@
 ---
 name: 0 Degrees Oy - Kukaperii.fi
 when: 01/2019-
-role: Co-Founder
+role: Co-Founder, Tech
 technologies: React, Redux, Kubernetes, GCP, Helm
 
 layout: col-1

@@ -1,7 +1,7 @@
 ---
 name: South American Cable Television Operator - Test Automation Framework for Mobile App
 when: 10/10/2016
-role: Developer
+role: Software Engineer
 technologies: Appium, OpenCV, Java, jUnit, Testdroid Cloud
 
 layout: col-1
