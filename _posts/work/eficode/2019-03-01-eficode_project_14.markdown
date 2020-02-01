@@ -1,6 +1,6 @@
 ---
 name: Life insurance company - Devops lead
-when: 03/2019-
+when: 03/2019-11/2019
 role: Devops Lead
 technologies: OpenShift, Jenkins, CI/CD, Puppet, Zabbix
 
