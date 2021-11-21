@@ -1,0 +1,262 @@
+@use "sass:map";
+
+$grid-max-width-breakpoints: (
+  xs: 0,
+  sm: 575px,
+  md: 767px,
+  lg: 991px,
+  xl: 1199px,
+  xxl: 1399px,
+);
+
+@font-face {
+  font-family: "JetBrains";
+  font-style: normal;
+  // font-weight: 700;
+  src: url("../fonts/JetBrainsMono-VariableFont.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v13-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/poppins-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MetroFont";
+  font-style: normal;
+  // font-weight: 700;
+  src: url("../fonts/metro-font-hki.ttf") format("truetype");
+  font-display: swap;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font: 112.5%/1.45em JetBrains, Arial, serif, sans-serif;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: JetBrains, Arial, serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+h1 {
+  color: inherit;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+}
+h2 {
+  color: inherit;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+}
+h3 {
+  color: inherit;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+}
+h4 {
+  color: inherit;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+}
+h5 {
+  color: inherit;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+}
+h6 {
+  color: inherit;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+}
+
+.navbar {
+  background-color: #f0f2f4 !important;
+  @media screen and (max-width: map.get($grid-max-width-breakpoints, "lg")) {
+    padding: 0;
+  }
+  a.navbar-link {
+    transition: 0.2s all;
+    text-decoration: unset;
+    color: rgba(0, 0, 0, 0.65);
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    &:hover {
+      color: rgba(0, 0, 0, 0.9);
+    }
+  }
+  &.page-navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: transparent !important;
+    @media screen and (max-width: map.get($grid-max-width-breakpoints, "lg")) {
+      position: relative;
+      background-color: #f0f2f4 !important;
+    }
+  }
+}
+
+.gradient-link {
+  font-style: italic !important;
+  font-size: 1.1em !important;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+  background-image: linear-gradient(120deg, #5cfd98 0%, #50c5fd 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  cursor: pointer;
+}
+
+.gradient-link:hover {
+  background-size: 100% 88%;
+  color: inherit;
+}
+// Row styles
+
+.row {
+  --bs-gutter-x: unset;
+  --bs-gutter-y: unset;
+}
+
+.max-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 750px;
+}
+
+.metro-top-row {
+  margin-top: 2em;
+  @media screen and (max-width: map.get($grid-max-width-breakpoints, "md")) {
+    margin-top: 1em;
+  }
+}
+
+.centered-row {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+.bio-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 36px;
+  @media screen and (max-width: map.get($grid-max-width-breakpoints, "lg")) {
+    padding: 0 18px;
+  }
+}
+
+.bio-container {
+  padding: 0 14px;
+  margin: 0 auto;
+  max-width: 650px;
+  @media screen and (max-width: 1000px) {
+    padding: 0;
+  }
+  @media screen and (max-width: map.get($grid-max-width-breakpoints, "lg")) {
+    max-width: 500px;
+    margin-bottom: 3em;
+  }
+}
+
+.avatar-wrapper {
+  @media screen and (max-width: map.get($grid-max-width-breakpoints, "lg")) {
+    padding: 2em 3em 3em;
+  }
+  .avatar {
+    @media screen and (max-width: map.get($grid-max-width-breakpoints, "lg")) {
+      display: block;
+      max-width: 460px;
+      max-height: 460px;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      font-size: 8em;
+      line-height: 2em;
+      margin: 0 auto;
+    }
+  }
+}
+
+footer {
+  background: #dfdad4;
+  padding: 2em 1em;
+  a {
+    color: inherit;
+    text-decoration: unset;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.aatos-logo {
+  font-family: Poppins;
+  font-weight: 600;
+  color: #0080a4;
+  font-size: 32px;
+  text-decoration: unset;
+  line-height: 27px;
+}
+
+.input-row {
+  &.upper {
+    border-radius: 0.25rem 0.25rem 0 0;
+    margin-bottom: 0.25rem;
+  }
+  &.bottom {
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+}
