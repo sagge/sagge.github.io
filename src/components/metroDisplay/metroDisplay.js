@@ -171,8 +171,10 @@ const MetroDisplayContainer = styled.div`
   padding-top: 22.522522%;
   align-items: center;
   justify-content: center;
-  font-size: ${props => props.metroDisplayWidth * 0.02555555556}px;
+  font-size: ${props => props.metroDisplayWidth * 0.031}px;
 `
+
+// 28.7
 
 const MetroDisplayFrame = styled.div`
   position: absolute;
@@ -255,6 +257,7 @@ const DisplayRowWrapper = styled.div`
 
 const DisplayRow = styled.div`
   display: flex;
+  position: relative;
   width: ${props => props.metroDisplayWidth * 0.6531531532}px;
   height: ${props => props.metroDisplayWidth * 0.03153153153}px;
 
@@ -278,11 +281,11 @@ const DisplayRow = styled.div`
   }
   .static {
     position: absolute;
-    left: 9.8%;
+    left: 3.7%;
   }
   .narrow {
-    letter-spacing: ${props => props.metroDisplayWidth / -300}px;
-    left: 6.8%;
+    letter-spacing: ${props => props.metroDisplayWidth / -214}px;
+    left: 0%;
   }
 `
 
@@ -390,7 +393,7 @@ const MetroDisplay = ({ topRow, bottomRow }) => {
                 </DisplayRow>
                 <DisplayRow metroDisplayWidth={metroDisplayWidth}>
                   <p className="static narrow">
-                    &#123;&#125;&#123;&#125;&#123;&#125;
+                    &#123;&#125;&#123;&#125;&#124;&#126;
                   </p>
                   <p>{bottomRow}</p>
                 </DisplayRow>
