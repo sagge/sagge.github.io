@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
 
 import MetroClock from "./metroClock"
@@ -324,21 +324,20 @@ const AegLogoWrapper = styled.div`
   line-height: 0;
 `
 
-const MetroDisplay = ({ topRow, bottomRow }) => {
+const MetroDisplay = ({ topRow, bottomRow, metroDisplayWidth, setMetroDisplayWidth }) => {
   const metroDisplayRef = useRef()
-  const [metroDisplayWidth, setMetroDisplayWidth] = useState(0)
 
   useEffect(() => {
     const updateSize = () => {
-      const metroDisplayWidth = metroDisplayRef.current.clientWidth
-      if (metroDisplayWidth) {
-        setMetroDisplayWidth(metroDisplayWidth)
+      const displayWidth = metroDisplayRef.current.clientWidth
+      if (displayWidth) {
+        setMetroDisplayWidth(displayWidth)
       }
     }
     window.addEventListener("resize", updateSize)
     updateSize()
     return () => window.removeEventListener("resize", updateSize)
-  }, [])
+  }, [setMetroDisplayWidth])
 
   return (
     <div style={{ width: "100%" }}>
@@ -385,13 +384,17 @@ const MetroDisplay = ({ topRow, bottomRow }) => {
             <DisplayBackground metroDisplayWidth={metroDisplayWidth}>
               <DisplayRowWrapper>
                 <DisplayRow
+                  id="display-row-top"
                   metroDisplayWidth={metroDisplayWidth}
                   marginBottom={true}
                 >
                   <p className="static">0:12</p>
                   <p>{topRow}</p>
                 </DisplayRow>
-                <DisplayRow metroDisplayWidth={metroDisplayWidth}>
+                <DisplayRow
+                  id="display-row-bottom"
+                  metroDisplayWidth={metroDisplayWidth}
+                >
                   <p className="static narrow">
                     &#123;&#125;&#123;&#125;&#124;&#126;
                   </p>
