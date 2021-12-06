@@ -37,7 +37,7 @@ const MetroDisplayPage = () => {
   const [error, setError] = useState(undefined)
 
   useEffect(() => {
-    fetch("http://sakari.nerdclub.dy.fi/")
+    fetch("https://sakari.nerdclub.dy.fi/")
       .then(res => res.json())
       .then(
         result => {
@@ -85,7 +85,7 @@ const MetroDisplayPage = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ 1: values.firstRow, 2: values.secondRow }),
     }
-    fetch("http://sakari.nerdclub.dy.fi/", requestOptions)
+    fetch("https://sakari.nerdclub.dy.fi/", requestOptions)
       .then(res => res.json())
       .then(
         result => {
