@@ -44,7 +44,7 @@ const MetroDisplayPage = () => {
           setDisplayText({ topRow: result[1], bottomRow: result[2] })
         },
         error => {
-          setError("Display disconnected, failed to fetch the data")
+          setError("Display disconnected, failed to fetch data")
         }
       )
   }, [])
@@ -62,7 +62,10 @@ const MetroDisplayPage = () => {
     document.getElementById("FirstRowTest").innerHTML = values.firstRow
     const topText = document.getElementById("FirstRowTest")
     const topTextWidth = topText.clientWidth + 1
-    if (topTextWidth > topContainerWidth * 0.815 || values.firstRow.length > 48) {
+    if (
+      topTextWidth > topContainerWidth * 0.815 ||
+      values.firstRow.length > 48
+    ) {
       errors.firstRow = "Text too long"
     }
 
@@ -71,7 +74,10 @@ const MetroDisplayPage = () => {
     document.getElementById("SecondRowTest").innerHTML = values.secondRow
     const bottomText = document.getElementById("SecondRowTest")
     const bottomTextWidth = bottomText.clientWidth + 1
-    if (bottomTextWidth > bottomContainerWidth * 0.815 || values.secondRow.length > 48) {
+    if (
+      bottomTextWidth > bottomContainerWidth * 0.815 ||
+      values.secondRow.length > 48
+    ) {
       errors.secondRow = "Text too long"
     }
 
