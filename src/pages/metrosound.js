@@ -91,7 +91,7 @@ const MetroSoundPage = () => {
           <MetroButton buttonText="Itäkeskus" buttonValue="IK" />
           <MetroButton buttonText="Kamppi" buttonValue="KP" />
           <MetroButton buttonText="Ruoholahti" buttonValue="RL" />
-          <MetroButton buttonText="Ei matkustajia" buttonValue="S1" />
+          <MetroButton buttonText="Ei matkus&shy;tajia" buttonValue="S1" />
           {error && (
             <div style={{ width: "100%" }}>
               <p style={{ color: "red", margin: 0, fontSize: "16px" }}>
