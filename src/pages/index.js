@@ -29,11 +29,7 @@ const IndexPage = () => (
             >
               aatos.
             </a>
-            , a private pilot, an M.Sc. and a diehard can-do person based in
-            Helsinki. Exploring, experimenting and always learning. I like
-            building things, from surfboards to CNC milling machines and if
-            something breaks, I’ll always find a way to fix it. On my spare time
-            I like to perfect my pizza making skills 🍕
+            , a private pilot, an M.Sc., and a maker based in Helsinki.
           </p>
           <p>
             Want to chat? Contact me on{" "}
@@ -53,7 +49,7 @@ const IndexPage = () => (
                 className="gradient-link"
                 href="mailto:pesonen.sakari@gmail.com"
               >
-                Email
+                email
               </a>
             </b>{" "}
             or drop a message to my old{" "}

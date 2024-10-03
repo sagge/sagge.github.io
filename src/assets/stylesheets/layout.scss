@@ -20,10 +20,10 @@ $grid-max-width-breakpoints: (
 @font-face {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/poppins-v13-latin-600.woff2") format("woff2"),
+  font-weight: 700;
+  src: url("../fonts/poppins-v13-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/poppins-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/poppins-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
 }
 
@@ -253,11 +253,14 @@ footer {
 
 .aatos-logo {
   font-family: Poppins;
-  font-weight: 600;
-  color: #0080a4;
-  font-size: 32px;
-  text-decoration: unset;
+  font-size: 30px;
+  font-weight: 700;
   line-height: 27px;
+  text-decoration: unset;
+  background: linear-gradient(to right, #0880a4, #0880a4 25%, #ff3e7e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .input-row {
